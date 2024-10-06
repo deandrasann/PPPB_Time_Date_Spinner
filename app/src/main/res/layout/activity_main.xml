@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/simpliremind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SimpiRemind"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/line1"
+        android:layout_margin="24dp"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/simpliremind"
+        app:layout_constraintBottom_toTopOf="@id/img_login"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/img_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/finance__e_commerce__startup__workflow___account__information__user__profile__data"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_add"/>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img_login"
+        android:layout_marginTop="64dp"
+        android:text="Add Task"
+        android:backgroundTint="#0066CC"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
